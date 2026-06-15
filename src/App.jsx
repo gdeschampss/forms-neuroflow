@@ -4,6 +4,7 @@ import StepWelcome from './components/StepWelcome';
 import StepSelection from './components/StepSelection';
 import StepContact from './components/StepContact';
 import StepSuccess from './components/StepSuccess';
+import { BackgroundLines } from './components/ui/animated-svg-background';
 import './index.css';
 
 function App() {
@@ -47,11 +48,13 @@ function App() {
   };
 
   return (
-    <div className="app-wrapper">
-      <FunnelContainer step={step} totalSteps={totalSteps} direction={direction}>
-        {renderStep()}
-      </FunnelContainer>
-    </div>
+    <BackgroundLines>
+      <div className="app-wrapper">
+        <FunnelContainer step={step} totalSteps={totalSteps} direction={direction}>
+          {renderStep()}
+        </FunnelContainer>
+      </div>
+    </BackgroundLines>
   );
 }
 

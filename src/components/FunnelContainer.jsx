@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBrain } from 'react-icons/fa';
+import logoImg from '../assets/logo2.png';
 
 const variants = {
   enter: (direction) => {
@@ -33,8 +33,8 @@ const FunnelContainer = ({ children, step, totalSteps, direction }) => {
       <div className="glass-effect glass-1"></div>
       <div className="glass-effect glass-2"></div>
       
-      <div className="logo-container">
-        <FaBrain size={32} color="#0b57d0" style={{ marginRight: '10px' }} />
+      <div className="logo-container" style={{ display: 'flex', alignItems: 'center' }}>
+        <img src={logoImg} alt="NeuroFlow Logo" style={{ height: '48px', width: '48px', marginRight: '10px', objectFit: 'contain' }} />
         <span className="logo-text">NeuroFlow</span>
       </div>
 
