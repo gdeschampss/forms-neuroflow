@@ -93,6 +93,9 @@ body {
     min-height: 80vh;
     border-radius: 16px;
     justify-content: center;
+    background: rgba(22, 27, 34, 0.45); /* High transparency glassmorphism */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
   }
 }
 
